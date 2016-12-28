@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "HJDataCore"
   s.version      = "0.0.2"
-  s.summary      = "Encapsulation network request frame"
+  s.summary      = "A short description of HJDataCore."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-             Encapsulation network request frame......
+       A short description of HJDataCore..........
                    DESC
 
   s.homepage     = "http://www.hejiajinrong.com"
@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "hejia" => "" }
+  s.author             = { "xiaomi" => "" }
   # Or just: s.author    = ""
   # s.authors            = { "" => "" }
   # s.social_media_url   = "http://twitter.com/"
@@ -117,7 +117,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
+  s.framework  = "Foundation"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
@@ -133,9 +133,8 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "YTKKeyValueStore"
-  s.dependency "AFNetworking"
-  s.dependency "MJExtension"
+  s.dependency "AFNetworking", "3.1.0"
   s.dependency "FMDB"
-
+  s.dependency "MJExtension"
+  s.dependency "YTKKeyValueStore"
 end
