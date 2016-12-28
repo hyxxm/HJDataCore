@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53031503055F1D0CDDD5DD6F /* libPods-HJDataCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 032E2ACCF97AF39CA35B3D48 /* libPods-HJDataCore.a */; };
+		A7932C6A1D07D536004E13E4 /* HJDataInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = A7932C691D07D536004E13E4 /* HJDataInterface.m */; };
+		A7E524F71CE1F78E0049948E /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E524F61CE1F78E0049948E /* libAFNetworking.a */; };
+		A7E524FA1CE1F7E40049948E /* libYTKKeyValueStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E524F91CE1F7E40049948E /* libYTKKeyValueStore.a */; };
+		A7E524FC1CE1F7F60049948E /* libFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E524FB1CE1F7F60049948E /* libFMDB.a */; };
+		A7E524FE1CE1F8150049948E /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E524FD1CE1F8150049948E /* libsqlite3.0.tbd */; };
+		A7E525001CE1F8670049948E /* libMJExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E524FF1CE1F8670049948E /* libMJExtension.a */; };
+		A7F05CD41CE1E24300FECA6D /* HJAFNetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F05CCA1CE1E24300FECA6D /* HJAFNetWorking.m */; };
+		A7F05CD51CE1E24300FECA6D /* HJDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F05CCC1CE1E24300FECA6D /* HJDataCenter.m */; };
+		A7F05CD61CE1E24300FECA6D /* HJRequestDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F05CD11CE1E24300FECA6D /* HJRequestDefine.m */; };
+		A7F05CD71CE1E24300FECA6D /* HJSQLPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F05CD31CE1E24300FECA6D /* HJSQLPersistence.m */; };
+		A7F05CDF1CE1E3A100FECA6D /* HJDataCoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F05CDE1CE1E3A100FECA6D /* HJDataCoreTests.m */; };
+		A7F05CE11CE1E3A100FECA6D /* libHJDataCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F05CBC1CE1E18500FECA6D /* libHJDataCore.a */; };
+		A7F05CE91CE1E3B900FECA6D /* HJDataCenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F05CE71CE1E3B900FECA6D /* HJDataCenterTests.m */; };
+		A7F05CEA1CE1E3B900FECA6D /* HJDataInterfaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F05CE81CE1E3B900FECA6D /* HJDataInterfaceTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7F05CE21CE1E3A100FECA6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7F05CB41CE1E18500FECA6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7F05CBB1CE1E18500FECA6D;
+			remoteInfo = HJDataCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A7F05CBA1CE1E18500FECA6D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		032E2ACCF97AF39CA35B3D48 /* libPods-HJDataCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HJDataCore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		557640B31C6B9314A02853D0 /* Pods-HJDataCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJDataCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HJDataCore/Pods-HJDataCore.debug.xcconfig"; sourceTree = "<group>"; };
+		9CF1A3F4E0B732B052B4DFDA /* Pods-HJDataCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJDataCore.release.xcconfig"; path = "Pods/Target Support Files/Pods-HJDataCore/Pods-HJDataCore.release.xcconfig"; sourceTree = "<group>"; };
+		A7932C691D07D536004E13E4 /* HJDataInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJDataInterface.m; sourceTree = "<group>"; };
+		A7E524F41CE1F75F0049948E /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "../../../../../Library/Developer/Xcode/DerivedData/thrallplus-dvatigzpjsunnablnapkchctpqoh/Build/Products/Debug-iphonesimulator/libPods.a"; sourceTree = "<group>"; };
+		A7E524F61CE1F78E0049948E /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../../../../../Library/Developer/Xcode/DerivedData/thrallplus-dvatigzpjsunnablnapkchctpqoh/Build/Products/Debug-iphonesimulator/libAFNetworking.a"; sourceTree = "<group>"; };
+		A7E524F91CE1F7E40049948E /* libYTKKeyValueStore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYTKKeyValueStore.a; path = "../../../../../Library/Developer/Xcode/DerivedData/thrallplus-dvatigzpjsunnablnapkchctpqoh/Build/Products/Debug-iphonesimulator/libYTKKeyValueStore.a"; sourceTree = "<group>"; };
+		A7E524FB1CE1F7F60049948E /* libFMDB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFMDB.a; path = "../../../../../Library/Developer/Xcode/DerivedData/thrallplus-dvatigzpjsunnablnapkchctpqoh/Build/Products/Debug-iphonesimulator/libFMDB.a"; sourceTree = "<group>"; };
+		A7E524FD1CE1F8150049948E /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		A7E524FF1CE1F8670049948E /* libMJExtension.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMJExtension.a; path = "../../../../../Library/Developer/Xcode/DerivedData/thrallplus-dvatigzpjsunnablnapkchctpqoh/Build/Products/Debug-iphonesimulator/libMJExtension.a"; sourceTree = "<group>"; };
+		A7F05CBC1CE1E18500FECA6D /* libHJDataCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHJDataCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7F05CC91CE1E24300FECA6D /* HJAFNetWorking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJAFNetWorking.h; sourceTree = "<group>"; };
+		A7F05CCA1CE1E24300FECA6D /* HJAFNetWorking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJAFNetWorking.m; sourceTree = "<group>"; };
+		A7F05CCB1CE1E24300FECA6D /* HJDataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJDataCenter.h; sourceTree = "<group>"; };
+		A7F05CCC1CE1E24300FECA6D /* HJDataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJDataCenter.m; sourceTree = "<group>"; };
+		A7F05CCD1CE1E24300FECA6D /* HJDataInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJDataInterface.h; sourceTree = "<group>"; };
+		A7F05CCE1CE1E24300FECA6D /* HJNetWorking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJNetWorking.h; sourceTree = "<group>"; };
+		A7F05CCF1CE1E24300FECA6D /* HJPersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPersistence.h; sourceTree = "<group>"; };
+		A7F05CD01CE1E24300FECA6D /* HJRequestDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJRequestDefine.h; sourceTree = "<group>"; };
+		A7F05CD11CE1E24300FECA6D /* HJRequestDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJRequestDefine.m; sourceTree = "<group>"; };
+		A7F05CD21CE1E24300FECA6D /* HJSQLPersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJSQLPersistence.h; sourceTree = "<group>"; };
+		A7F05CD31CE1E24300FECA6D /* HJSQLPersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJSQLPersistence.m; sourceTree = "<group>"; };
+		A7F05CDC1CE1E3A100FECA6D /* HJDataCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HJDataCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7F05CDE1CE1E3A100FECA6D /* HJDataCoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJDataCoreTests.m; sourceTree = "<group>"; };
+		A7F05CE01CE1E3A100FECA6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7F05CE71CE1E3B900FECA6D /* HJDataCenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJDataCenterTests.m; sourceTree = "<group>"; };
+		A7F05CE81CE1E3B900FECA6D /* HJDataInterfaceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJDataInterfaceTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7F05CB91CE1E18500FECA6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53031503055F1D0CDDD5DD6F /* libPods-HJDataCore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7F05CD91CE1E3A100FECA6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7E525001CE1F8670049948E /* libMJExtension.a in Frameworks */,
+				A7E524FE1CE1F8150049948E /* libsqlite3.0.tbd in Frameworks */,
+				A7E524FC1CE1F7F60049948E /* libFMDB.a in Frameworks */,
+				A7E524FA1CE1F7E40049948E /* libYTKKeyValueStore.a in Frameworks */,
+				A7E524F71CE1F78E0049948E /* libAFNetworking.a in Frameworks */,
+				A7F05CE11CE1E3A100FECA6D /* libHJDataCore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02B29C4B16FFBDED7A29E4CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				557640B31C6B9314A02853D0 /* Pods-HJDataCore.debug.xcconfig */,
+				9CF1A3F4E0B732B052B4DFDA /* Pods-HJDataCore.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		79A2BB241F659C04BAA2C68D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				032E2ACCF97AF39CA35B3D48 /* libPods-HJDataCore.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7F05CB31CE1E18500FECA6D = {
+			isa = PBXGroup;
+			children = (
+				A7F05CBE1CE1E18500FECA6D /* HJDataCore */,
+				A7F05CDD1CE1E3A100FECA6D /* HJDataCoreTests */,
+				A7F05CBD1CE1E18500FECA6D /* Products */,
+				02B29C4B16FFBDED7A29E4CD /* Pods */,
+				79A2BB241F659C04BAA2C68D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A7F05CBD1CE1E18500FECA6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7F05CBC1CE1E18500FECA6D /* libHJDataCore.a */,
+				A7F05CDC1CE1E3A100FECA6D /* HJDataCoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7F05CBE1CE1E18500FECA6D /* HJDataCore */ = {
+			isa = PBXGroup;
+			children = (
+				A7F05CED1CE1E45100FECA6D /* imp */,
+				A7F05CCD1CE1E24300FECA6D /* HJDataInterface.h */,
+				A7932C691D07D536004E13E4 /* HJDataInterface.m */,
+				A7F05CD01CE1E24300FECA6D /* HJRequestDefine.h */,
+				A7F05CD11CE1E24300FECA6D /* HJRequestDefine.m */,
+			);
+			path = HJDataCore;
+			sourceTree = "<group>";
+		};
+		A7F05CDD1CE1E3A100FECA6D /* HJDataCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				A7E524FD1CE1F8150049948E /* libsqlite3.0.tbd */,
+				A7E524FF1CE1F8670049948E /* libMJExtension.a */,
+				A7E524FB1CE1F7F60049948E /* libFMDB.a */,
+				A7E524F91CE1F7E40049948E /* libYTKKeyValueStore.a */,
+				A7E524F61CE1F78E0049948E /* libAFNetworking.a */,
+				A7E524F41CE1F75F0049948E /* libPods.a */,
+				A7F05CE71CE1E3B900FECA6D /* HJDataCenterTests.m */,
+				A7F05CE81CE1E3B900FECA6D /* HJDataInterfaceTests.m */,
+				A7F05CDE1CE1E3A100FECA6D /* HJDataCoreTests.m */,
+				A7F05CE01CE1E3A100FECA6D /* Info.plist */,
+			);
+			path = HJDataCoreTests;
+			sourceTree = "<group>";
+		};
+		A7F05CED1CE1E45100FECA6D /* imp */ = {
+			isa = PBXGroup;
+			children = (
+				A7F05CCE1CE1E24300FECA6D /* HJNetWorking.h */,
+				A7F05CCF1CE1E24300FECA6D /* HJPersistence.h */,
+				A7F05CD21CE1E24300FECA6D /* HJSQLPersistence.h */,
+				A7F05CD31CE1E24300FECA6D /* HJSQLPersistence.m */,
+				A7F05CC91CE1E24300FECA6D /* HJAFNetWorking.h */,
+				A7F05CCA1CE1E24300FECA6D /* HJAFNetWorking.m */,
+				A7F05CCB1CE1E24300FECA6D /* HJDataCenter.h */,
+				A7F05CCC1CE1E24300FECA6D /* HJDataCenter.m */,
+			);
+			name = imp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7F05CBB1CE1E18500FECA6D /* HJDataCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7F05CC51CE1E18500FECA6D /* Build configuration list for PBXNativeTarget "HJDataCore" */;
+			buildPhases = (
+				25132273DA5D347C3D63779C /* [CP] Check Pods Manifest.lock */,
+				A7F05CB81CE1E18500FECA6D /* Sources */,
+				A7F05CB91CE1E18500FECA6D /* Frameworks */,
+				A7F05CBA1CE1E18500FECA6D /* CopyFiles */,
+				ADED4D138593C5C3B436D371 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HJDataCore;
+			productName = HJDataCore;
+			productReference = A7F05CBC1CE1E18500FECA6D /* libHJDataCore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A7F05CDB1CE1E3A100FECA6D /* HJDataCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7F05CE41CE1E3A100FECA6D /* Build configuration list for PBXNativeTarget "HJDataCoreTests" */;
+			buildPhases = (
+				A7F05CD81CE1E3A100FECA6D /* Sources */,
+				A7F05CD91CE1E3A100FECA6D /* Frameworks */,
+				A7F05CDA1CE1E3A100FECA6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7F05CE31CE1E3A100FECA6D /* PBXTargetDependency */,
+			);
+			name = HJDataCoreTests;
+			productName = HJDataCoreTests;
+			productReference = A7F05CDC1CE1E3A100FECA6D /* HJDataCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7F05CB41CE1E18500FECA6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = HeJia;
+				TargetAttributes = {
+					A7F05CBB1CE1E18500FECA6D = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					A7F05CDB1CE1E3A100FECA6D = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A7F05CB71CE1E18500FECA6D /* Build configuration list for PBXProject "HJDataCore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A7F05CB31CE1E18500FECA6D;
+			productRefGroup = A7F05CBD1CE1E18500FECA6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7F05CBB1CE1E18500FECA6D /* HJDataCore */,
+				A7F05CDB1CE1E3A100FECA6D /* HJDataCoreTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7F05CDA1CE1E3A100FECA6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25132273DA5D347C3D63779C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ADED4D138593C5C3B436D371 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HJDataCore/Pods-HJDataCore-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7F05CB81CE1E18500FECA6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7F05CD71CE1E24300FECA6D /* HJSQLPersistence.m in Sources */,
+				A7932C6A1D07D536004E13E4 /* HJDataInterface.m in Sources */,
+				A7F05CD51CE1E24300FECA6D /* HJDataCenter.m in Sources */,
+				A7F05CD61CE1E24300FECA6D /* HJRequestDefine.m in Sources */,
+				A7F05CD41CE1E24300FECA6D /* HJAFNetWorking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7F05CD81CE1E3A100FECA6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7F05CE91CE1E3B900FECA6D /* HJDataCenterTests.m in Sources */,
+				A7F05CDF1CE1E3A100FECA6D /* HJDataCoreTests.m in Sources */,
+				A7F05CEA1CE1E3B900FECA6D /* HJDataInterfaceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7F05CE31CE1E3A100FECA6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7F05CBB1CE1E18500FECA6D /* HJDataCore */;
+			targetProxy = A7F05CE21CE1E3A100FECA6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A7F05CC31CE1E18500FECA6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"${SRCROOT}/../Pods/Headers/Public\"",
+					"\"${SRCROOT}/../Pods/Headers/Public/YTKKeyValueStore\"",
+					"\"${SRCROOT}/../Pods/Headers/Public/MJExtension\"",
+					"\"${SRCROOT}/../Pods/Headers/Public/AFNetworking\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A7F05CC41CE1E18500FECA6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"${SRCROOT}/../Pods/Headers/Public\"",
+					"\"${SRCROOT}/../Pods/Headers/Public/YTKKeyValueStore\"",
+					"\"${SRCROOT}/../Pods/Headers/Public/MJExtension\"",
+					"\"${SRCROOT}/../Pods/Headers/Public/AFNetworking\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7F05CC61CE1E18500FECA6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 557640B31C6B9314A02853D0 /* Pods-HJDataCore.debug.xcconfig */;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A7F05CC71CE1E18500FECA6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CF1A3F4E0B732B052B4DFDA /* Pods-HJDataCore.release.xcconfig */;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A7F05CE51CE1E3A100FECA6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HJDataCoreTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hejia.HJDataCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A7F05CE61CE1E3A100FECA6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HJDataCoreTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hejia.HJDataCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7F05CB71CE1E18500FECA6D /* Build configuration list for PBXProject "HJDataCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7F05CC31CE1E18500FECA6D /* Debug */,
+				A7F05CC41CE1E18500FECA6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7F05CC51CE1E18500FECA6D /* Build configuration list for PBXNativeTarget "HJDataCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7F05CC61CE1E18500FECA6D /* Debug */,
+				A7F05CC71CE1E18500FECA6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7F05CE41CE1E3A100FECA6D /* Build configuration list for PBXNativeTarget "HJDataCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7F05CE51CE1E3A100FECA6D /* Debug */,
+				A7F05CE61CE1E3A100FECA6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7F05CB41CE1E18500FECA6D /* Project object */;
+}
