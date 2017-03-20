@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HJDataInterface.h"
 @interface ViewController ()
 
 @end
@@ -16,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    GetDataWithID(nil, nil, nil, nil, nil, self);
 }
 
 

@@ -12,19 +12,20 @@
 
 @interface GlobalDataCenter : NSObject
 
-+(void) initModule:(NSDictionary *)commparam signBlackList:(NSSet *)blacklist;
++(void) initModule:(NSDictionary *)commparam signBlackList:(NSSet *)blacklist commErrHandler:(NSDictionary<NSNumber * ,ErrorResp> *)errHandler;
 
 +(void) updateCommParam:(NSString *) key value:(NSString *) val;
 
 + (GlobalDataCenter *)sharedGlobalDataCenter;
 
--(NSUInteger) sendAsynPostRequest:(RequestParam*) param ParseData:(ParseData)parser LocalResp:(LocalResp) localFunc NetResp:(NetResp) netFunc Error:(ErrorResp) error;
+-(NSUInteger ) sendAsynPostRequest:(RequestParam*) param ParseData:(ParseData)parser LocalResp:(LocalResp) localFunc NetResp:(NetResp) netFunc Error:(ErrorResp) error sender:(id) sender;
 
--(void)downloadFile:(RequestParam*)param savePath:(NSURL*)savePath progress:(Progress) progressFunc finished:(DownloadFinished) finishFunc Error:(ErrorResp) error;
 
--(void)uploadImage:(RequestParam*)param img:(UIImage*)img progress:(Progress) progressFunc finished:(UploadFinished) finishFunc Error:(ErrorResp) error;
+-(void)downloadFile:(RequestParam*)param savePath:(NSURL*)savePath progress:(Progress) progressFunc finished:(DownloadFinished) finishFunc Error:(ErrorResp) error sender:(id) sender;
 
--(void) uploadFile:(RequestParam *) param filePath:(NSString *) filePath progress:(Progress) Progress finished:(UploadFinished) finished Error:(ErrorResp) error;
+-(void)uploadImage:(RequestParam*)param img:(UIImage*)img progress:(Progress) progressFunc finished:(UploadFinished) finishFunc Error:(ErrorResp) error sender:(id) sender;
+
+-(void) uploadFile:(RequestParam *) param filePath:(NSString *) filePath progress:(Progress) Progress finished:(UploadFinished) finished Error:(ErrorResp) error sender:(id) sender;
 
 -(NetworkReachabilityStatus) getNetReachabilityStatus;
 

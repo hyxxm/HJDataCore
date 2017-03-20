@@ -150,7 +150,6 @@ typedef void(^UploadFinished)(id jsonData,RequestResult* result);
 
 
 
-
 //! 数据项定义
 #define _RESULT_    @"result"
 

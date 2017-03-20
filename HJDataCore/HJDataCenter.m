@@ -84,10 +84,12 @@ static inline NSString* MakeSQLKey(RequestParam* param){
     id<HJPersistence>       _persistence;
     NSMutableDictionary     *_requestMap;
     NSMutableDictionary     *_commonMap;
+    NSDictionary            *_commonErrHandlerMap;
 }
 
 @property (nonatomic,strong) NSMutableDictionary *commonMap;
 @property (nonatomic,strong) NSMutableSet *blacklist;
+@property (nonatomic,strong) NSDictionary<NSNumber *,ErrorResp> *commonErrHandlerMap;
 
 @end
 
@@ -117,7 +119,7 @@ static inline NSString* MakeSQLKey(RequestParam* param){
     return self;
 }
 
-+(void)initModule:(NSDictionary *)pCommparam signBlackList:(NSSet *)pBlacklist{
++(void)initModule:(NSDictionary *)pCommparam signBlackList:(NSSet *)pBlacklist commErrHandler:(NSDictionary<NSNumber *,ErrorResp> *)errHandler{
     GlobalDataCenter* center = [self sharedGlobalDataCenter];
     center.commonMap =[NSMutableDictionary new];
     for(NSString *key in pCommparam.allKeys){
@@ -128,6 +130,8 @@ static inline NSString* MakeSQLKey(RequestParam* param){
     [center.blacklist addObject:PARAM_RSID];
     [center.blacklist addObject:@"context"];
     [center.blacklist addObject:PARAM_CMD];
+    
+    center.commonErrHandlerMap = errHandler;
 }
 
 +(void) updateCommParam:(NSString *)key value:(NSString *)val{
@@ -147,7 +151,9 @@ static inline NSString* MakeSQLKey(RequestParam* param){
                        ParseData:(ParseData)parser
                        LocalResp:(LocalResp)localFunc
                          NetResp:(NetResp)netFunc
-                           Error:(ErrorResp)error{
+                           Error:(ErrorResp)error
+                          sender:(id) sender
+{
     @synchronized (self) {
         short curRID = _s_rid;
         //! 增加通用字段
@@ -159,19 +165,19 @@ static inline NSString* MakeSQLKey(RequestParam* param){
                     param.param[key] = obj;
                 }
             }];
-//            [param.param addEntriesFromDictionary:_commonMap];
         }
         //! 加上sign
         [self addSign:param];
         
         [self handleLocalData:param localFunc:localFunc ParseFunc:parser];
         
-        [self handleNetData:param Parser:parser NetResp:netFunc Error:error];
+        [self handleNetData:param Parser:parser NetResp:netFunc Error:error sender:sender];
         
         _s_rid++;
         return curRID;
     }
 }
+
 
 -(void) addSign:(RequestParam *)param{
     if(param.needSign){
@@ -216,7 +222,7 @@ static inline NSString* MakeSQLKey(RequestParam* param){
  *  @param netFunc 网络请求回调
  *  @param error   错误回调
  */
--(void) handleNetData:(RequestParam *)param Parser:(ParseData)parser NetResp:(NetResp) netFunc Error:(ErrorResp) error{
+-(void) handleNetData:(RequestParam *)param Parser:(ParseData)parser NetResp:(NetResp) netFunc Error:(ErrorResp) error sender:(id) sender{
     if(NET_STATUS == NetworkReachabilityStatusNotReachable){
         error([RequestResult create:param.cmd rsid:0 errorMsg:@"您还没连接上网络" errCode:-999]);
         return;
@@ -239,11 +245,11 @@ static inline NSString* MakeSQLKey(RequestParam* param){
     
     __weak typeof(self) weakSelf = self;
     [_networking sendAsynPostRequest:param NetResp:^(id jsonData, RequestResult *result) {
+        __strong typeof(weakSelf) self = weakSelf;
         if(result.errcode != 0){
-            if(error) error(result);
+            [self handlerError:result Error:error];
             return;
         }
-        __strong typeof(weakSelf) self = weakSelf;
         
         //! 确定当前返回的数据是不是该请求的最新数据，不是则不做处理
         NSString* requestSqlKey = MakeSQLKey(param);
@@ -274,10 +280,17 @@ static inline NSString* MakeSQLKey(RequestParam* param){
             
         }
     } Error:^(RequestResult *result) {
-        error(result);
-    }];
+        __strong typeof(weakSelf) self = weakSelf;
+        [self handlerError:result Error:error];
+    } sender:sender];
 }
 
+
+-(void) handlerError:(RequestResult *)result Error:(ErrorResp) error{
+    ErrorResp resp = self.commonErrHandlerMap[@(result.errcode)];
+    if(resp) resp(result);
+    else error(result);
+}
 
 
 /**
@@ -349,24 +362,24 @@ static inline NSString* MakeSQLKey(RequestParam* param){
 }
 
 
--(void) downloadFile:(RequestParam *)param savePath:(NSURL *)savePath progress:(Progress)progressFunc finished:(DownloadFinished)finishFunc Error:(ErrorResp)error{
-    [_networking downloadFile:param savePath:savePath progress:progressFunc finished:finishFunc Error:error];
+-(void) downloadFile:(RequestParam *)param savePath:(NSURL *)savePath progress:(Progress)progressFunc finished:(DownloadFinished)finishFunc Error:(ErrorResp)error sender:(id)sender{
+    [_networking downloadFile:param savePath:savePath progress:progressFunc finished:finishFunc Error:error sender:sender];
 }
 
 
 
 
 
--(void) uploadImage:(RequestParam *)param img:(UIImage *)img progress:(Progress)progressFunc finished:(UploadFinished)finishFunc Error:(ErrorResp)error{
+-(void) uploadImage:(RequestParam *)param img:(UIImage *)img progress:(Progress)progressFunc finished:(UploadFinished)finishFunc Error:(ErrorResp)error sender:(id)sender{
     if(_commonMap){
         [param.param addEntriesFromDictionary:_commonMap];
     }
-    [_networking uploadImage:param img:img progress:progressFunc finished:finishFunc Error:error];
+    [_networking uploadImage:param img:img progress:progressFunc finished:finishFunc Error:error sender:sender];
 }
 
 
--(void)uploadFile:(RequestParam *)param filePath:(NSString *)filePath progress:(Progress)Progress finished:(UploadFinished)finished Error:(ErrorResp)error{
-    [_networking uploadFile:param filePath:filePath progress:Progress finished:finished Error:error];
+-(void)uploadFile:(RequestParam *)param filePath:(NSString *)filePath progress:(Progress)Progress finished:(UploadFinished)finished Error:(ErrorResp)error sender:(id)sender{
+    [_networking uploadFile:param filePath:filePath progress:Progress finished:finished Error:error sender:sender];
 }
 
 

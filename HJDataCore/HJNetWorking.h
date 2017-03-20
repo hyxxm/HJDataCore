@@ -22,7 +22,8 @@
  *  @param netFunc 数据返回callback
  *  @param error   数据错误callback
  */
--(void)sendAsynPostRequest:(RequestParam *)param NetResp:(NetResp) netFunc Error:(ErrorResp) error;
+-(void)sendAsynPostRequest:(RequestParam *)param NetResp:(NetResp) netFunc Error:(ErrorResp) error sender:(id) sender;
+
 
 /**
  *  下载文件
@@ -33,7 +34,7 @@
  *  @param netFunc      数据返回callback
  *  @param error        数据错误callback
  */
--(void)downloadFile:(RequestParam*)param savePath:(NSURL*)savePath progress:(Progress) progressFunc finished:(DownloadFinished) finishFunc Error:(ErrorResp) error;
+-(void)downloadFile:(RequestParam*)param savePath:(NSURL*)savePath progress:(Progress) progressFunc finished:(DownloadFinished) finishFunc Error:(ErrorResp) error sender:(id) sender;
 
 /**
  *  上传文件
@@ -43,7 +44,7 @@
  *  @param netFunc      数据返回callback
  *  @param error        数据错误callback
  */
--(void)uploadImage:(RequestParam*)param img:(UIImage*)img progress:(Progress) progressFunc finished:(UploadFinished) finishFunc Error:(ErrorResp) error;
+-(void)uploadImage:(RequestParam*)param img:(UIImage*)img progress:(Progress) progressFunc finished:(UploadFinished) finishFunc Error:(ErrorResp) error sender:(id) sender;
 
 
 /**
@@ -53,6 +54,6 @@
  */
 -(NetworkReachabilityStatus) getNetReachabilityStatus;
 
--(void) uploadFile:(RequestParam *) param filePath:(NSString *) filePath progress:(Progress) Progress finished:(UploadFinished) finished Error:(ErrorResp) error;
+-(void) uploadFile:(RequestParam *) param filePath:(NSString *) filePath progress:(Progress) Progress finished:(UploadFinished) finished Error:(ErrorResp) error sender:(id) sender;
 
 @end

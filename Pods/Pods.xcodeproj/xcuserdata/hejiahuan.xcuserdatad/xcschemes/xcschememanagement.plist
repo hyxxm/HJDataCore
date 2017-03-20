@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ReactiveCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>YTKKeyValueStore.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,17 +37,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>138D6A62F1CD6A6DD4D5EB16FDE3B7FA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5548F12247A70284F0D3C9B26F65EBAD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>8642CC820CE8C5B88C113D7F47AF4BC3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9AFD22741F838B024A2E14B968734AEC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -53,6 +53,16 @@
 			<true/>
 		</dict>
 		<key>A316B54C67E947D23CECD230FA5BFAEF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F436543F4FE96191C2C2D081FC3E2D6A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F6C61A1F26152F6AC7AC5C616AF05713</key>
 		<dict>
 			<key>primary</key>
 			<true/>

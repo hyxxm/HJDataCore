@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '138D6A62F1CD6A6DD4D5EB16FDE3B7FA'
+               BlueprintIdentifier = 'F6C61A1F26152F6AC7AC5C616AF05713'
                BlueprintName = 'Pods-HJDataCore'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-HJDataCore.a'>
