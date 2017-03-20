@@ -137,7 +137,8 @@ Pod::Spec.new do |s|
   s.dependency "FMDB"
   s.dependency "MJExtension"
   s.dependency "YTKKeyValueStore"
-  s.subspec 'test' do |ss|
-    ss.source_files = 'HJDataCore/test/*.{h,m}'
-  end
+  s.dependency "ReactiveCocoa" ,"2.5"
+  # s.subspec 'test' do |ss|
+  #   ss.source_files = 'HJDataCore/test/*.{h,m}'
+  # end
 end

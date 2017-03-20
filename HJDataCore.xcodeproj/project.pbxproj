@@ -13,8 +13,6 @@
 		A1F67CFD1E7FAAE300A4BD1C /* HJDataInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F67CF41E7FAAE300A4BD1C /* HJDataInterface.m */; };
 		A1F67CFE1E7FAAE300A4BD1C /* HJRequestDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F67CF81E7FAAE300A4BD1C /* HJRequestDefine.m */; };
 		A1F67CFF1E7FAAE300A4BD1C /* HJSQLPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F67CFA1E7FAAE300A4BD1C /* HJSQLPersistence.m */; };
-		A1F67D041E7FAB1100A4BD1C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F67D031E7FAB1100A4BD1C /* ViewController.m */; };
-		A1F67D051E7FAB1100A4BD1C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F67D031E7FAB1100A4BD1C /* ViewController.m */; };
 		A7E524F71CE1F78E0049948E /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E524F61CE1F78E0049948E /* libAFNetworking.a */; };
 		A7E524FA1CE1F7E40049948E /* libYTKKeyValueStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E524F91CE1F7E40049948E /* libYTKKeyValueStore.a */; };
 		A7E524FC1CE1F7F60049948E /* libFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E524FB1CE1F7F60049948E /* libFMDB.a */; };
@@ -64,8 +62,6 @@
 		A1F67CF81E7FAAE300A4BD1C /* HJRequestDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJRequestDefine.m; sourceTree = "<group>"; };
 		A1F67CF91E7FAAE300A4BD1C /* HJSQLPersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJSQLPersistence.h; sourceTree = "<group>"; };
 		A1F67CFA1E7FAAE300A4BD1C /* HJSQLPersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJSQLPersistence.m; sourceTree = "<group>"; };
-		A1F67D021E7FAB1100A4BD1C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A1F67D031E7FAB1100A4BD1C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A7E524F41CE1F75F0049948E /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "../../../../../Library/Developer/Xcode/DerivedData/thrallplus-dvatigzpjsunnablnapkchctpqoh/Build/Products/Debug-iphonesimulator/libPods.a"; sourceTree = "<group>"; };
 		A7E524F61CE1F78E0049948E /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../../../../../Library/Developer/Xcode/DerivedData/thrallplus-dvatigzpjsunnablnapkchctpqoh/Build/Products/Debug-iphonesimulator/libAFNetworking.a"; sourceTree = "<group>"; };
 		A7E524F91CE1F7E40049948E /* libYTKKeyValueStore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYTKKeyValueStore.a; path = "../../../../../Library/Developer/Xcode/DerivedData/thrallplus-dvatigzpjsunnablnapkchctpqoh/Build/Products/Debug-iphonesimulator/libYTKKeyValueStore.a"; sourceTree = "<group>"; };
@@ -137,15 +133,6 @@
 			name = imp;
 			sourceTree = "<group>";
 		};
-		A1F67D011E7FAB1100A4BD1C /* test */ = {
-			isa = PBXGroup;
-			children = (
-				A1F67D021E7FAB1100A4BD1C /* ViewController.h */,
-				A1F67D031E7FAB1100A4BD1C /* ViewController.m */,
-			);
-			path = test;
-			sourceTree = "<group>";
-		};
 		A7F05CB31CE1E18500FECA6D = {
 			isa = PBXGroup;
 			children = (
@@ -169,7 +156,6 @@
 		A7F05CBE1CE1E18500FECA6D /* HJDataCore */ = {
 			isa = PBXGroup;
 			children = (
-				A1F67D011E7FAB1100A4BD1C /* test */,
 				A1F67D001E7FAAEA00A4BD1C /* imp */,
 				A1F67CF31E7FAAE300A4BD1C /* HJDataInterface.h */,
 				A1F67CF41E7FAAE300A4BD1C /* HJDataInterface.m */,
@@ -319,7 +305,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1F67D041E7FAB1100A4BD1C /* ViewController.m in Sources */,
 				A1F67CFF1E7FAAE300A4BD1C /* HJSQLPersistence.m in Sources */,
 				A1F67CFD1E7FAAE300A4BD1C /* HJDataInterface.m in Sources */,
 				A1F67CFC1E7FAAE300A4BD1C /* HJDataCenter.m in Sources */,
@@ -334,7 +319,6 @@
 			files = (
 				A7F05CE91CE1E3B900FECA6D /* HJDataCenterTests.m in Sources */,
 				A7F05CDF1CE1E3A100FECA6D /* HJDataCoreTests.m in Sources */,
-				A1F67D051E7FAB1100A4BD1C /* ViewController.m in Sources */,
 				A7F05CEA1CE1E3B900FECA6D /* HJDataInterfaceTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
